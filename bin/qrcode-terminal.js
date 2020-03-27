@@ -69,7 +69,8 @@ function handleInput(input) {
      * Render the QR Code
      */
 
-    qrcode.generate(input);
+    qrcode.setErrorLevel('Q');
+    qrcode.generate(input, {small: true, paddingLeft: '                                                        '});
 }
 
 /*!
